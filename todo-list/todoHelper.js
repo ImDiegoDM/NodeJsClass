@@ -2,6 +2,8 @@ const PATH = "./todo.json"
 const fs = require('fs');
 
 function get(){
+    debugger
+
     try{
         const rawData = fs.readFileSync(PATH);
         const data = JSON.parse(rawData);
